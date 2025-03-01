@@ -926,3 +926,40 @@ html[dir="rtl"] body {
     min-height: 25px;
 }
 
+/* Custom styles for post index */
+.postindex {
+    margin: 2rem 0;
+}
+
+.post-preview {
+    margin-bottom: 2rem;
+}
+
+.post-preview h2 {
+    margin-bottom: 0.5rem;
+}
+
+.post-preview h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post-preview h2 a:hover {
+    color: #007bff;
+}
+
+.post-preview .date {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.post-preview .read-more {
+    margin-top: 1rem;
+}
+
+hr {
+    margin: 2rem 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
