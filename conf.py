@@ -189,17 +189,17 @@ THEME_CONFIG = {
     }
 }
 # Config for bootstrap4:
-# THEME_CONFIG = {
-#     DEFAULT_LANG: {
-#         # Use a light navbar with dark text. Defaults to False.
-#         'navbar_light': False,
-#         # Use a custom navbar color. If unset, 'navbar_light' sets text +
-#         # background color. If set, navbar_light controls only background
-#         # color. Supported values: bg-dark, bg-light, bg-primary, bg-secondary,
-#         # bg-success, bg-danger, bg-warning, bg-info, bg-white, bg-transparent.
-#         'navbar_custom_bg': '',
-#     }
-# }
+THEME_CONFIG = {
+    DEFAULT_LANG: {
+        # Use a light navbar with dark text. Defaults to False.
+        'navbar_light': True,  # Make the navigation bar lighter
+        # Contents of the sidebar, If empty, the sidebar is not displayed.
+        'sidebar': '',
+        # Customize appearance to focus on post titles
+        'featured_large': False,
+        'featured_small': False
+    }
+}
 
 # POSTS and PAGES contains (wildcard, destination, template) tuples.
 # (translatable)
@@ -390,7 +390,7 @@ COMPILERS = {
 # output / TRANSLATION[lang] / TAG_PATH / tag.html (list of posts for a tag)
 # output / TRANSLATION[lang] / TAG_PATH / tag RSS_EXTENSION (RSS feed for a tag)
 # (translatable)
-# TAG_PATH = "categories"
+TAG_PATH = "tags"  # Make sure tags go to the "tags" directory, not "categories"
 
 # By default, the list of tags is stored in
 #     output / TRANSLATION[lang] / TAG_PATH / index.html
@@ -402,7 +402,7 @@ COMPILERS = {
 
 # If TAG_PAGES_ARE_INDEXES is set to True, each tag's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
-# TAG_PAGES_ARE_INDEXES = False
+TAG_PAGES_ARE_INDEXES = True  # Change to True to make tag pages show posts
 
 # Set descriptions for tag pages to make them more interesting. The
 # default is no description. The value is used in the meta description
@@ -454,8 +454,8 @@ HIDDEN_TAGS = ['mathjax']
 # output / TRANSLATION[lang] / CATEGORY_PATH / CATEGORY_PREFIX category.html (list of posts for a category)
 # output / TRANSLATION[lang] / CATEGORY_PATH / CATEGORY_PREFIX category RSS_EXTENSION (RSS feed for a category)
 # (translatable)
-# CATEGORY_PATH = "categories"
-# CATEGORY_PREFIX = "cat_"
+CATEGORY_PATH = "categories"
+CATEGORY_PREFIX = ""  # No prefix needed
 
 # By default, the list of categories is stored in
 #     output / TRANSLATION[lang] / CATEGORY_PATH / index.html
@@ -477,7 +477,7 @@ CATEGORY_OUTPUT_FLAT_HIERARCHY = False
 
 # If CATEGORY_PAGES_ARE_INDEXES is set to True, each category's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
-# CATEGORY_PAGES_ARE_INDEXES = False
+CATEGORY_PAGES_ARE_INDEXES = True  # Change to True for category pages to show posts
 
 # Set descriptions for category pages to make them more interesting. The
 # default is no description. The value is used in the meta description
@@ -941,7 +941,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # )
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.
-# INDEX_TEASERS = False
+INDEX_TEASERS = False  # Change to False to hide all content/teasers
 
 # HTML fragments with the Read more... links.
 # The following tags exist and are replaced for you:
@@ -1179,7 +1179,7 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 
 # Modify the number of Post per Index Page
 # Defaults to 10
-# INDEX_DISPLAY_POST_COUNT = 10
+INDEX_DISPLAY_POST_COUNT = 10  # You can adjust this number
 
 # By default, Nikola generates RSS files for the website and for tags, and
 # links to it.  Set this to False to disable everything RSS-related.

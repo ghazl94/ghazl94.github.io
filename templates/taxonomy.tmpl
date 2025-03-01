@@ -1,0 +1,55 @@
+## -*- coding: utf-8 -*-
+<%inherit file="base.tmpl"/>
+<%namespace name="feeds_translations" file="feeds_translations_helper.tmpl" import="*"/>
+<%namespace name="helper" file="taxonomy_helper.tmpl"/>
+<%namespace name="comments" file="comments_helper.tmpl"/>
+<%namespace name="pagination" file="pagination_helper.tmpl"/>
+
+<%block name="content_header">
+    <header>
+        <h1>${title|h}</h1>
+        % if description:
+        <p>${description}</p>
+        % endif
+        % if subcategories:
+        ${helper.subcategories_section(subcategories)}
+        % endif
+    </header>
+    ${feeds_translations.translation_link(kind)}
+</%block>
+
+<%block name="extra_head">
+    ${parent.extra_head()}
+    % if len(posts) == 0:
+    <meta name="robots" content="noindex">
+    % endif
+</%block>
+
+<%block name="content">
+<%block name="content_header"></%block>
+% if posts:
+    <div class="postindex">
+    % for post in posts:
+        <article class="h-entry post-${post.meta('type')}">
+        <header>
+            <h1 class="p-name entry-title"><a href="${post.permalink()}" class="u-url">${post.title(lang)|h}</a></h1>
+            <div class="metadata">
+                <p class="byline author vcard"><span class="byline-name fn">${post.author(lang)}</span></p>
+                <p class="dateline"><a href="${post.permalink()}" rel="bookmark"><time class="published dt-published" datetime="${post.formatted_date('webiso')}" title="${post.formatted_date(date_format)|h}">${post.formatted_date(date_format)|h}</time></a></p>
+            </div>
+        </header>
+        % if index_teasers:
+        <div class="p-summary entry-summary">
+            ${post.text(teaser_only=True)}
+        </div>
+        % endif
+        </article>
+    % endfor
+    </div>
+    ${helper.html_pager()}
+    ${comments.comment_link_script()}
+    ${helper.mathjax_script(posts)}
+% else:
+    <p>${messages('No posts found.')}</p>
+% endif
+</%block>
