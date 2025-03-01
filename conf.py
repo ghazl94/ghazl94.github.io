@@ -143,8 +143,8 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/", "Home"),
-        ("/cv/", "CV"),
-        ("/blog/", "Blog"),  # Changed to match INDEX_PATH
+        ("/curriculum-vitae/", "CV"),
+        ("/blog/", "Blog"),
     ),
 }
 
@@ -245,6 +245,7 @@ POSTS = (
 PAGES = (
     ("pages/*.rst", "", "page.tmpl"),
     ("pages/*.md", "", "page.tmpl"),
+    ("pages/cv.md", "", "cv_page.tmpl"),  # Use custom template for CV
     ("pages/*.txt", "", "page.tmpl"),
     ("pages/*.html", "", "page.tmpl"),
     ("pages/*.ipynb", "", "page.tmpl"),

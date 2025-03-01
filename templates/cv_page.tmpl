@@ -1,0 +1,14 @@
+## -*- coding: utf-8 -*-
+<%inherit file="base.tmpl"/>
+
+<%block name="extra_head">
+    ${parent.extra_head()}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/cv.css">
+</%block>
+
+<%block name="content">
+<div class="body-content">
+    ${post.text()}
+</div>
+</%block>
