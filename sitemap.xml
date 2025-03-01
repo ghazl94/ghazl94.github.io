@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://example.com/</loc>
-  <lastmod>2025-03-01T14:06:00Z</lastmod>
+  <lastmod>2025-03-01T15:01:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/2025/</loc>
@@ -15,11 +15,27 @@
  </url>
  <url>
   <loc>https://example.com/archive.html</loc>
-  <lastmod>2025-03-01T14:06:00Z</lastmod>
+  <lastmod>2025-03-01T15:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://example.com/blog/</loc>
+  <lastmod>2025-03-01T15:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://example.com/blog/test-notebook/</loc>
+  <lastmod>2025-03-01T15:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://example.com/blog/this-is-test/</loc>
+  <lastmod>2025-03-01T15:01:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/categories/</loc>
   <lastmod>2025-03-01T14:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://example.com/cv/</loc>
+  <lastmod>2025-03-01T15:01:00Z</lastmod>
  </url>
  <url>
   <loc>https://example.com/galleries/</loc>
