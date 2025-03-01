@@ -7,67 +7,55 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://ghazl94.github.io/</loc>
-  <lastmod>2025-03-01T17:55:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/2025/</loc>
-  <lastmod>2025-03-01T16:07:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/archive.html</loc>
-  <lastmod>2025-03-01T17:55:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/blog/</loc>
-  <lastmod>2025-03-01T16:38:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/blog/eda-minimal-extended/</loc>
-  <lastmod>2025-03-01T16:38:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/blog/eda-practice/</loc>
-  <lastmod>2025-03-01T16:07:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/blog/hello-world/</loc>
-  <lastmod>2025-03-01T16:07:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/blog/simple-notebook/</loc>
-  <lastmod>2025-03-01T16:07:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/blog/test-notebook/</loc>
-  <lastmod>2025-03-01T16:07:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/blog/this-is-test/</loc>
-  <lastmod>2025-03-01T16:07:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/categories/</loc>
-  <lastmod>2025-03-01T17:55:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ghazl94.github.io/categories/cat_tutorials/</loc>
-  <lastmod>2025-03-01T16:35:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ghazl94.github.io/categories/data-science/</loc>
-  <lastmod>2025-03-01T16:35:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ghazl94.github.io/categories/jupyter/</loc>
-  <lastmod>2025-03-01T16:35:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ghazl94.github.io/categories/python/</loc>
-  <lastmod>2025-03-01T16:35:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/categories/tutorials/</loc>
-  <lastmod>2025-03-01T17:55:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://ghazl94.github.io/curriculum-vitae/</loc>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/cv/</loc>
@@ -75,26 +63,26 @@
  </url>
  <url>
   <loc>https://ghazl94.github.io/galleries/</loc>
-  <lastmod>2025-03-01T16:07:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/listings/</loc>
-  <lastmod>2025-03-01T16:07:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/tags/</loc>
-  <lastmod>2025-03-01T17:55:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/tags/data-science/</loc>
-  <lastmod>2025-03-01T17:55:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/tags/jupyter/</loc>
-  <lastmod>2025-03-01T17:55:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://ghazl94.github.io/tags/python/</loc>
-  <lastmod>2025-03-01T17:55:00Z</lastmod>
+  <lastmod>2025-03-01T20:43:00Z</lastmod>
  </url>
 </urlset>
