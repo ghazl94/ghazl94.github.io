@@ -16,16 +16,16 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "Your Name"  # (translatable)
-BLOG_TITLE = "Demo Site"  # (translatable)
+BLOG_AUTHOR = "Ghazal Taghipour"  # (translatable)
+BLOG_TITLE = "Ghazal"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://example.com/"
+SITE_URL = "https://ghazl94.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://example.com/"
-BLOG_EMAIL = "joe@demo.site"
-BLOG_DESCRIPTION = "This is a demo site for Nikola."  # (translatable)
+BLOG_EMAIL = "taghipourghazal@gmail.com"
+BLOG_DESCRIPTION = "This is portfolio of Ghazal Taghipour."  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -142,8 +142,9 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/index.html", "Home"),
-        ("/cv/index.html", "CV")
+        ("/", "Home"),
+        ("/cv/", "CV"),
+        ("/blog/", "Blog"),
     ),
 }
 
@@ -694,7 +695,7 @@ GITHUB_COMMIT_SOURCE = False
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
 # to the location of conf.py
-# OUTPUT_FOLDER = 'output'
+OUTPUT_FOLDER = 'output'
 
 # where the "cache" of partial generated content should be located
 # default: 'cache'
