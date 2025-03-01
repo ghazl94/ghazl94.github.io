@@ -144,7 +144,7 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/", "Home"),
         ("/cv/", "CV"),
-        ("/blog/", "Blog"),
+        ("/blog/", "Blog"),  # Changed to match INDEX_PATH
     ),
 }
 
@@ -581,8 +581,7 @@ HIDDEN_AUTHORS = ['Guest']
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-# (translatable)
-INDEX_PATH = "blog"
+INDEX_PATH = "blog"  # Changed from empty string to "blog"
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
