@@ -9,9 +9,7 @@
     <div class="cv-header">
         <h1>Ghazal Taghipour</h1>
         <div class="contact-info">
-            <p><i class="fas fa-map-marker-alt"></i> Richard-Tauber-Damm, 12277, Berlin</p>
             <p><i class="fas fa-envelope"></i> <a href="mailto:Taghipourghazal@gmail.com">Taghipourghazal@gmail.com</a></p>
-            <p><i class="fas fa-phone"></i> (+49)155 60101070</p>
             <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ghazal-taghipour" target="_blank">LinkedIn</a></p>
         </div>
     </div>
