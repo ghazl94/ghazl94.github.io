@@ -1,8 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Demo Site</title><link>https://example.com/</link><description>This is a demo site for Nikola.</description><atom:link href="https://example.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:joe@demo.site"&gt;Your Name&lt;/a&gt; </copyright><lastBuildDate>Sat, 01 Mar 2025 15:01:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>test notebook</title><link>https://example.com/blog/test-notebook/</link><dc:creator>Your Name</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered" id="cell-id=2231c708"&gt;&lt;div class="prompt input_prompt"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ghazal</title><link>https://ghazl94.github.io/</link><description>This is portfolio of Ghazal Taghipour.</description><atom:link href="https://ghazl94.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2025 &lt;a href="mailto:taghipourghazal@gmail.com"&gt;Ghazal Taghipour&lt;/a&gt; </copyright><lastBuildDate>Sat, 01 Mar 2025 15:28:29 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>test notebook</title><link>https://ghazl94.github.io/blog/test-notebook/</link><dc:creator>Ghazal Taghipour</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered" id="cell-id=2231c708"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Write your post here.&lt;/p&gt;
+&lt;p&gt;This is a test&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>https://example.com/blog/test-notebook/</guid><pubDate>Sat, 01 Mar 2025 14:59:29 GMT</pubDate></item><item><title>This is test</title><link>https://example.com/blog/this-is-test/</link><dc:creator>Your Name</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>https://example.com/blog/this-is-test/</guid><pubDate>Sat, 01 Mar 2025 14:06:01 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered" id="cell-id=030c16f5"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="input_area"&gt;
+&lt;div class="highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;numpy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;pandas&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;pd&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;seaborn&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nn"&gt;sns&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+&lt;div class="output_area"&gt;
+&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_text output_error"&gt;
+&lt;pre&gt;
+&lt;span class="ansi-red-fg"&gt;---------------------------------------------------------------------------&lt;/span&gt;
+&lt;span class="ansi-red-fg"&gt;ModuleNotFoundError&lt;/span&gt;                       Traceback (most recent call last)
+&lt;span class="ansi-cyan-fg"&gt;Cell&lt;/span&gt;&lt;span class="ansi-cyan-fg"&gt; &lt;/span&gt;&lt;span class="ansi-green-fg"&gt;In[1]&lt;/span&gt;&lt;span class="ansi-green-fg"&gt;, line 1&lt;/span&gt;
+&lt;span class="ansi-green-fg"&gt;----&amp;gt; &lt;/span&gt;&lt;span class="ansi-green-fg"&gt;1&lt;/span&gt; &lt;span class="ansi-bold" style="color: rgb(0,135,0)"&gt;import&lt;/span&gt;&lt;span style="color: rgb(188,188,188)"&gt; &lt;/span&gt;&lt;span class="ansi-blue-intense-fg ansi-bold"&gt;numpy&lt;/span&gt;&lt;span style="color: rgb(188,188,188)"&gt; &lt;/span&gt;&lt;span class="ansi-bold" style="color: rgb(0,135,0)"&gt;as&lt;/span&gt;&lt;span style="color: rgb(188,188,188)"&gt; &lt;/span&gt;&lt;span class="ansi-blue-intense-fg ansi-bold"&gt;np&lt;/span&gt;
+&lt;span class="ansi-green-fg"&gt;      2&lt;/span&gt; &lt;span class="ansi-bold" style="color: rgb(0,135,0)"&gt;import&lt;/span&gt;&lt;span style="color: rgb(188,188,188)"&gt; &lt;/span&gt;&lt;span class="ansi-blue-intense-fg ansi-bold"&gt;pandas&lt;/span&gt;&lt;span style="color: rgb(188,188,188)"&gt; &lt;/span&gt;&lt;span class="ansi-bold" style="color: rgb(0,135,0)"&gt;as&lt;/span&gt;&lt;span style="color: rgb(188,188,188)"&gt; &lt;/span&gt;&lt;span class="ansi-blue-intense-fg ansi-bold"&gt;pd&lt;/span&gt;
+&lt;span class="ansi-green-fg"&gt;      3&lt;/span&gt; &lt;span class="ansi-bold" style="color: rgb(0,135,0)"&gt;import&lt;/span&gt;&lt;span style="color: rgb(188,188,188)"&gt; &lt;/span&gt;&lt;span class="ansi-blue-intense-fg ansi-bold"&gt;seaborn&lt;/span&gt;&lt;span style="color: rgb(188,188,188)"&gt; &lt;/span&gt;&lt;span class="ansi-bold" style="color: rgb(0,135,0)"&gt;as&lt;/span&gt;&lt;span style="color: rgb(188,188,188)"&gt; &lt;/span&gt;&lt;span class="ansi-blue-intense-fg ansi-bold"&gt;sns&lt;/span&gt;
+
+&lt;span class="ansi-red-fg"&gt;ModuleNotFoundError&lt;/span&gt;: No module named 'numpy'&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><guid>https://ghazl94.github.io/blog/test-notebook/</guid><pubDate>Sat, 01 Mar 2025 14:59:29 GMT</pubDate></item><item><title>This is test</title><link>https://ghazl94.github.io/blog/this-is-test/</link><dc:creator>Ghazal Taghipour</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><guid>https://ghazl94.github.io/blog/this-is-test/</guid><pubDate>Sat, 01 Mar 2025 14:06:01 GMT</pubDate></item></channel></rss>
