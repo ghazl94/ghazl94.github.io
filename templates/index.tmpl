@@ -41,11 +41,7 @@
             </time>
         </div>
         
-        % if index_teasers:
-            <div class="p-summary entry-summary">
-            ${post.text(teaser_only=True)}
-            </div>
-        % endif
+        <!-- Remove teaser content display entirely -->
         
         <p class="read-more">
             <a href="${post.permalink()}" class="btn btn-outline-primary">Read more &rarr;</a>
