@@ -15,6 +15,9 @@
         <meta name="robots" content="noindex">
     % endif
     ${math.math_styles_ifposts(posts)}
+    % if permalink == '/' or permalink == '/' + index_file:
+        <link rel="stylesheet" href="/assets/css/homepage.css">
+    % endif
 </%block>
 
 <%block name="content">
@@ -24,6 +27,110 @@
 
 % if 'main_index' in pagekind:
     ${front_index_header}
+% endif
+
+% if permalink == '/' or permalink == '/' + index_file:
+    <!-- Hero section for homepage -->
+    <div class="hero-section">
+        <div class="container">
+            <h1>Hello, I'm Ghazal</h1>
+            <p>A motivated genetics graduate with expertise in next-generation sequencing (NGS), 3D cell culture, and machine learning applications in genomics.</p>
+            <a href="/curriculum-vitae/" class="btn btn-primary btn-lg">View My CV</a>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div class="container home-section">
+        <h2>About Me</h2>
+        <div class="row">
+            <div class="col-md-8 content-body">
+                <p>I'm a motivated genetics graduate with hands-on experience in both experimental and computational workflows. My expertise spans next-generation sequencing (NGS), 3D cell culture, and foundational machine learning applications in genomics.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills section -->
+    <div class="container home-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <span class="skill-pill">NGS Analysis</span>
+            <span class="skill-pill">3D Cell Culture</span>
+            <span class="skill-pill">Machine Learning</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">R</span>
+            <span class="skill-pill">Bash</span>
+            <span class="skill-pill">Data Analysis</span>
+            <span class="skill-pill">Genomics</span>
+        </div>
+    </div>
+
+    <!-- Projects section -->
+    <div class="projects-section">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>YSEQ GmbH Internship</h3>
+                            <p>Conducted PCR, DNA extraction, and NGS analysis during internship at YSEQ GmbH.</p>
+                            <a href="/blog/" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Colorectal Cancer Research</h3>
+                            <p>Investigated the clinical value of genes in nanocurcumin-treated colorectal cancer cells.</p>
+                            <a href="/blog/" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Hematopoietic Cell Transplantation</h3>
+                            <p>Worked on intelligent risk management in donor selection for transplantation.</p>
+                            <a href="/blog/" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education section with timeline -->
+    <div class="container home-section">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>Master's Degree: Genetics</h3>
+                    <p class="date">Tabriz University</p>
+                    <p>Specialized in genomics and computational biology.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>Bachelor's Degree: Molecular Genetics</h3>
+                    <p class="date">Azad University</p>
+                    <p>Focused on molecular genetics principles and laboratory techniques.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>Bachelor's Degree: Microbiology</h3>
+                    <p class="date">Azad University</p>
+                    <p>Studied microbiological processes and techniques.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest blog posts section -->
+    <div class="container latest-posts">
+        <h2>Latest Blog Posts</h2>
 % endif
 
 % if page_links:
@@ -41,15 +148,29 @@
             </time>
         </div>
         
-        <!-- Remove teaser content display entirely -->
+        % if index_teasers and post.has_teaser():
+        <div class="p-summary entry-summary">
+            ${post.teaser(teaser_only=True)}
+        </div>
+        % endif
         
         <p class="read-more">
             <a href="${post.permalink()}" class="btn btn-outline-primary">Read more &rarr;</a>
         </p>
-        <hr>
     </div>
 % endfor
 </div>
+
+% if permalink == '/' or permalink == '/' + index_file:
+    <!-- Call to action section -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p>I'm always interested in research collaborations, new projects, and learning opportunities in genetics and computational biology.</p>
+            <a href="mailto:taghipourghazal@gmail.com" class="btn btn-light">Contact Me</a>
+        </div>
+    </div>
+% endif
 
 % if page_links:
     ${pagination.page_navigation(current_page, page_links, prevlink, nextlink, prev_next_links_reversed)}
