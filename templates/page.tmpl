@@ -1,0 +1,187 @@
+## -*- coding: utf-8 -*-
+<%namespace name="helper" file="post_helper.tmpl"/>
+<%namespace name="pheader" file="post_header.tmpl"/>
+<%namespace name="comments" file="comments_helper.tmpl"/>
+<%inherit file="base.tmpl"/>
+
+<%block name="extra_head">
+    ${parent.extra_head()}
+    % if post.meta('keywords'):
+    <meta name="keywords" content="${post.meta('keywords')|h}">
+    % endif
+    % if post.description():
+    <meta name="description" content="${post.description()|h}">
+    % endif
+    % if post.prev_post:
+        <link rel="prev" href="${post.prev_post.permalink()}" title="${post.prev_post.title()|h}" type="text/html">
+    % endif
+    % if post.next_post:
+        <link rel="next" href="${post.next_post.permalink()}" title="${post.next_post.title()|h}" type="text/html">
+    % endif
+    % if post.is_draft:
+        <meta name="robots" content="noindex">
+    % endif
+    
+    % if post.meta('slug') == 'index':
+    <link rel="stylesheet" href="/assets/css/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    % endif
+</%block>
+
+<%block name="content">
+<article class="post-${post.meta('type')} h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+    % if post.meta('slug') == 'index':
+    <!-- Hero section for homepage -->
+    <div class="hero-section">
+        <div class="container">
+            <h1>Hello, I'm Ghazal</h1>
+            <p>A motivated genetics graduate with expertise in next-generation sequencing (NGS), 3D cell culture, and machine learning applications in genomics.</p>
+            <a href="/curriculum-vitae/" class="btn btn-primary btn-lg">View My CV</a>
+        </div>
+    </div>
+    
+    <!-- Content with sidebar -->
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar column - now on the left -->
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <div class="profile-image-container">
+                        <img src="/images/profile.jpg" alt="Ghazal Taghipour" class="profile-image">
+                    </div>
+                    <h3 class="sidebar-name">Ghazal Taghipour</h3>
+                    <p class="sidebar-title">Genetics & Computational Biology</p>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/ghazl94" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:taghipourghazal@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="sidebar-divider"></div>
+                    
+                    <ul class="sidebar-links">
+                        <li>
+                            <a href="/curriculum-vitae/">
+                                <i class="fas fa-file-alt"></i> Curriculum Vitae
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/blog/">
+                                <i class="fas fa-pen-fancy"></i> Blog Posts
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                <i class="fas fa-envelope"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Main content column - now on the right -->
+            <div class="col-lg-8">
+                <!-- Original page content -->
+                <div class="e-content entry-content" itemprop="articleBody text">
+                ${post.text()}
+                </div>
+                
+                <!-- Featured Posts section (renamed from Featured Concepts) -->
+                <div class="home-section">
+                    <h2>Featured Posts</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="project-card">
+                                <div class="project-info">
+                                    <h3>Exploratory Data Analysis</h3>
+                                    <p>Learn about essential techniques for analyzing and visualizing datasets effectively.</p>
+                                    <a href="/blog/eda-practice/" class="btn btn-sm btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="project-card">
+                                <div class="project-info">
+                                    <h3>Pandas Profiling</h3>
+                                    <p>Discover how to generate automated EDA reports with pandas-profiling library.</p>
+                                    <a href="/blog/eda-pandas-profiling/" class="btn btn-sm btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        % if post.meta('slug') == 'index':
+        <!-- Projects section - commented out for future use -->
+        <!--
+        <div class="home-section" id="projects">
+            <h2>Featured Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>YSEQ GmbH Internship</h3>
+                            <p>Conducted PCR, DNA extraction, and NGS analysis during internship at YSEQ GmbH.</p>
+                            <a href="/blog/" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Colorectal Cancer Research</h3>
+                            <p>Investigated the clinical value of genes in nanocurcumin-treated colorectal cancer cells.</p>
+                            <a href="/blog/" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Hematopoietic Cell Transplantation</h3>
+                            <p>Worked on intelligent risk management in donor selection for transplantation.</p>
+                            <a href="/blog/" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        
+        <!-- Call to action section -->
+        <div class="cta-section" id="contact">
+            <div class="container">
+                <h2>Let's Connect</h2>
+                <p>I'm always interested in research collaborations, new projects, and learning opportunities in genetics and computational biology.</p>
+                <a href="mailto:taghipourghazal@gmail.com" class="btn btn-light">Contact Me</a>
+            </div>
+        </div>
+        % endif
+    </div>
+    
+    % else:
+    
+    <header>
+        ${pheader.html_post_header()}
+    </header>
+    <div class="e-content entry-content" itemprop="articleBody text">
+    ${post.text()}
+    </div>
+    % endif
+    
+    ${helper.mathjax_script(post)}
+</article>
+</%block>

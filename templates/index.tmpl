@@ -17,6 +17,7 @@
     ${math.math_styles_ifposts(posts)}
     % if permalink == '/' or permalink == '/' + index_file:
         <link rel="stylesheet" href="/assets/css/homepage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     % endif
 </%block>
 
@@ -39,33 +40,90 @@
         </div>
     </div>
 
-    <!-- About section -->
-    <div class="container home-section">
-        <h2>About Me</h2>
+    <!-- Main content with sidebar -->
+    <div class="container">
         <div class="row">
-            <div class="col-md-8 content-body">
-                <p>I'm a motivated genetics graduate with hands-on experience in both experimental and computational workflows. My expertise spans next-generation sequencing (NGS), 3D cell culture, and foundational machine learning applications in genomics.</p>
+            <!-- Main content column -->
+            <div class="col-lg-8">
+                <!-- About section -->
+                <div class="home-section">
+                    <h2>About Me</h2>
+                    <div class="content-body">
+                        <p>I'm a motivated genetics graduate with hands-on experience in both experimental and computational workflows. My expertise spans next-generation sequencing (NGS), 3D cell culture, and foundational machine learning applications in genomics.</p>
+                    </div>
+                </div>
+
+                <!-- Skills section -->
+                <div class="home-section">
+                    <h2>Skills</h2>
+                    <div class="skills-container">
+                        <span class="skill-pill">NGS Analysis</span>
+                        <span class="skill-pill">3D Cell Culture</span>
+                        <span class="skill-pill">Machine Learning</span>
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">R</span>
+                        <span class="skill-pill">Bash</span>
+                        <span class="skill-pill">Data Analysis</span>
+                        <span class="skill-pill">Genomics</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar column -->
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <div class="profile-image-container">
+                        <img src="/images/profile.jpg" alt="Ghazal Taghipour" class="profile-image" onerror="this.src='https://via.placeholder.com/180x180?text=Ghazal+T';">
+                    </div>
+                    <h3 class="sidebar-name">Ghazal Taghipour</h3>
+                    <p class="sidebar-title">Genetics & Computational Biology</p>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/ghazl94" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:taghipourghazal@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="sidebar-divider"></div>
+                    
+                    <ul class="sidebar-links">
+                        <li>
+                            <a href="/curriculum-vitae/">
+                                <i class="fas fa-file-alt"></i> Curriculum Vitae
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/blog/">
+                                <i class="fas fa-pen-fancy"></i> Blog Posts
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects">
+                                <i class="fas fa-project-diagram"></i> Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                <i class="fas fa-envelope"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Skills section -->
-    <div class="container home-section">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <span class="skill-pill">NGS Analysis</span>
-            <span class="skill-pill">3D Cell Culture</span>
-            <span class="skill-pill">Machine Learning</span>
-            <span class="skill-pill">Python</span>
-            <span class="skill-pill">R</span>
-            <span class="skill-pill">Bash</span>
-            <span class="skill-pill">Data Analysis</span>
-            <span class="skill-pill">Genomics</span>
-        </div>
-    </div>
-
     <!-- Projects section -->
-    <div class="projects-section">
+    <div class="projects-section" id="projects">
         <div class="container">
             <h2>Featured Projects</h2>
             <div class="row">
@@ -163,7 +221,7 @@
 
 % if permalink == '/' or permalink == '/' + index_file:
     <!-- Call to action section -->
-    <div class="cta-section">
+    <div class="cta-section" id="contact">
         <div class="container">
             <h2>Let's Connect</h2>
             <p>I'm always interested in research collaborations, new projects, and learning opportunities in genetics and computational biology.</p>
