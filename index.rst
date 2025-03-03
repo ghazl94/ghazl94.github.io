@@ -38,8 +38,3 @@ Projects
 *   **YSEQ GmbH Internship:** conducted PCR, DNA extraction, and NGS analysis.
 *   **Colorectal Cancer Research:** investigated the clinical value of genes in nanocurcumin-treated colorectal cancer cells.
 *   **Hematopoietic Progenitor Cell Transplantation:** worked on intelligent risk management in donor selection.
-
-Blog Posts
-----------
-
-*   `EDA Practice <blog/eda-practice>`_: A glimpse into Exploratory Data Analysis.
