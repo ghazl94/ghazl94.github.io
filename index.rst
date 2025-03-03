@@ -10,12 +10,12 @@
 Hello, Welcome!
 ================
 
-I'm Ghazal, and this is my personal website! Ghazal (غزل) is a Persian word referring to a form of amatory poem or ode, originating in Arabic literature. I hope you enjoy exploring my corner of the internet.
+My name is Ghazal, and this is my personal website! Ghazal (غزل) is a Persian word referring to a form of poem or ode. I hope you enjoy exploring my corner of the internet.
 
 About Me
 --------
 
-I'm a motivated genetics graduate with hands-on experience in both experimental and computational workflows. My expertise spans next-generation sequencing (NGS), 3D cell culture, and foundational machine learning applications in genomics.
+I am a motivated genetics graduate with hands-on experience in both experimental and computational workflows. My expertise spans next-generation sequencing (NGS), 3D cell culture, and foundational machine learning applications in genomics. Familiar with Python, R, and Bash for data processing and visualization.
 
 Education
 ---------
@@ -31,10 +31,11 @@ Skills
 *   3D Cell Culture
 *   Machine learning applications in biology
 *   Python, R, Bash
+*   Data processing and visualization
 
-Projects
---------
+Experiences
+-----------
 
 *   **YSEQ GmbH Internship:** conducted PCR, DNA extraction, and NGS analysis.
-*   **Colorectal Cancer Research:** investigated the clinical value of genes in nanocurcumin-treated colorectal cancer cells.
-*   **Hematopoietic Progenitor Cell Transplantation:** worked on intelligent risk management in donor selection.
+*   **Master Project Research** investigated the clinical value of genes in nanocurcumin-treated colorectal cancer cells.
+*   **Side Project: Hematopoietic Progenitor Cell Transplantation:** worked on intelligent risk management in donor selection.
