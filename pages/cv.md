@@ -1,5 +1,5 @@
 <!--
-.. title: Curriculum Vitae
+.. title: CV
 .. slug: curriculum-vitae
 .. date: 2025-03-01 16:00:00 UTC
 .. type: text
@@ -9,8 +9,8 @@
     <div class="cv-header">
         <h1>Ghazal Taghipour</h1>
         <div class="contact-info">
-            <p><i class="fas fa-envelope"></i> <a href="mailto:Taghipourghazal@gmail.com">Taghipourghazal@gmail.com</a></p>
-            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ghazal-taghipour" target="_blank">LinkedIn</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:taghipourghazal@gmail.com">Taghipourghazal@gmail.com</a></p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ghazal-taghipour-835bab193" target="_blank">linkedIn</a></p>
         </div>
     </div>
 
